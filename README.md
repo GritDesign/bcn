@@ -1,6 +1,4 @@
-#bcn - basically content
-
-## Usage
+#bcn
 
 
 
