@@ -1,0 +1,13 @@
+{
+  "name": "bcn",
+  "version": "0.0.2",
+  "main": "lib/basic-content.js",
+  "dependencies": {
+    "bacon-templates": "latest",
+    "sqlite3": "^2.2.3",
+    "fad": "0.0.4",
+    "image-size": "^0.3.0",
+    "joi": "^4.6.1",
+    "bcn-fs-root": "0.0.3"
+  }
+}
