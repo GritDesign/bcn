@@ -15,7 +15,7 @@ CREATE TABLE bcn_file (
 CREATE UNIQUE INDEX file_name_index ON bcn_file (filename, dirname);
 CREATE UNIQUE INDEX file_path_index ON bcn_file (dirname, filename, type);
 CREATE UNIQUE INDEX file_type_index ON bcn_file (type, dirname, filename);
-CREATE UNIQUE INDEX file_ext_index ON bcn_file (ext, dirname, filename);
+CREATE UNIQUE INDEX file_ext_index ON bcn_file (ext, type, dirname, filename);
 
 CREATE TABLE bcn_config (
 	initialized BOOLEAN default 0,
