@@ -1,13 +1,17 @@
 {
   "name": "bcn",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "lib/bcn.js",
   "dependencies": {
-    "bacon-templates": "0.0.5",
+    "bacon-templates": "0.0.6",
     "sqlite3": "^2.2.3",
     "fad": "0.0.4",
     "image-size": "^0.3.0",
     "joi": "^4.6.1",
-    "bcn-fs-root": "0.0.3"
+    "bcn-fs-root": "0.0.4",
+    "watch": "^0.10.0",
+    "cheerio": "^0.17.0",
+    "async": "^0.9.0",
+    "bcn-join": "0.1.4"
   }
 }
