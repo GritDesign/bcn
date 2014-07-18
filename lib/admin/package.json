@@ -1,0 +1,9 @@
+{
+  "name": "bcn-admin",
+  "version": "0.0.1",
+  "main": "lib/bcn-admin.js",
+  "dependencies": {
+    "bcn": "0.0.3",
+    "express": "^4.4.4"
+  }
+}
