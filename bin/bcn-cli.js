@@ -3,7 +3,8 @@
 var argv = require("optimist").argv;
 
 var commands = {
-    "dev": require("../lib/commands/dev.js")
+    "dev": require("../lib/commands/dev.js"),
+    "scrape" : require("../lib/commands/scrape.js")
 };
 
 process.title = "bcn";

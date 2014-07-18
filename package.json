@@ -1,10 +1,10 @@
 {
   "name": "bcn",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "lib/bcn.js",
   "preferGlobal": true,
   "bin": {
-	"bcn": "./bin/bcn-cli.js"
+    "bcn": "./bin/bcn-cli.js"
   },
   "dependencies": {
     "bacon-templates": "0.0.7",
@@ -26,6 +26,8 @@
     "less-middleware": "^1.0.3",
     "optimist": "^0.6.1",
     "tilde-expansion": "0.0.0",
-    "express": "^4.6.1"
+    "express": "^4.6.1",
+    "slug": "^0.5.0",
+    "js-beautify": "^1.5.1"
   }
 }
