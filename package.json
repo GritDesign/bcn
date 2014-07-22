@@ -28,6 +28,7 @@
     "tilde-expansion": "0.0.0",
     "express": "^4.6.1",
     "slug": "^0.5.0",
-    "js-beautify": "^1.5.1"
+    "js-beautify": "^1.5.1",
+    "bcn-filter": "0.0.3"
   }
 }

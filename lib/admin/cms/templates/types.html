@@ -1,4 +1,22 @@
 {{layout "layout.html"}}
 
-<h1>This is the types page</h1>
+{{var types = $cms("/content/types/*_type.json")}}
 
+<br/>
+
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Type Name</th>
+			<th>Description</th>
+			<th>&#160;</th>
+		</tr>
+	</thead>
+	{{each types}}
+		<tr>
+			<td>${name}</td>
+			<td>${description}</td>
+			<td><a href="/content/types/${name}_type.json">Edit</a></td>
+		</tr>
+	{{/each}}
+</table>

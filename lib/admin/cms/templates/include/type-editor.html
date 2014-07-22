@@ -1,0 +1,54 @@
+<div class="type" data-type="${$type.name}">
+{{each $type.fields}}
+	<div class="field" data-name="${$value.name}">
+		{{var fieldType = getType($value.type, $type)}}
+
+		{{if $value.isArray}}
+			<b>${$value.description}:</b><br/>
+			{{if $value.editorStyle == "grid"}}
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>&#160;</th>
+						{{each fieldType.fields}}
+							<th>${$value.description}</th>
+						{{/each}}
+					</tr>
+				</thead>
+				<tbody class="sortable">
+					{{each(i, $field) $obj[$value.name]}}
+						<tr>
+							<td>&#x2195;</td>
+							{{each fieldType.fields}}
+								<td>
+									{{if $value.type == "string"}}
+									<input name="${$value.name}" value="${$field[$value.name]}" />
+									{{else $value.type == "boolean"}}
+										<input type="checkbox" name="${$value.name}" value="${$field[$value.name]}"/>
+									{{/if}}
+								</td>
+							{{/each}}
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+			{{else}}
+				{{if $obj[$value.name]}}
+					{{each(i, $element) $obj[$value.name]}}
+						<div>
+							{{tmpl({$type: fieldType, $obj: $element}) "include/type-editor.html"}}
+						</div>
+					{{/each}}
+				{{/if}}
+			{{/if}}
+
+			<a href="">Add ${$value.descriptionSingle || $value.description}</a>
+			<hr/>
+		{{else}}
+			<b>${$value.description}:</b>
+			<input type="text" value="${$obj[$value.name]}" name="${$value.name}" size="80"/>
+			<br/>
+		{{/if}}
+	</div>
+{{/each}}
+</div>
