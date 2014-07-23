@@ -1,6 +1,6 @@
 {
   "name": "bcn",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "main": "lib/bcn.js",
   "preferGlobal": true,
   "bin": {
@@ -29,6 +29,8 @@
     "express": "^4.6.1",
     "slug": "^0.5.0",
     "js-beautify": "^1.5.1",
-    "bcn-filter": "0.0.3"
+    "bcn-filter": "0.0.5",
+    "uglify-js": "^2.4.15",
+    "browserify": "^4.2.3"
   }
 }
